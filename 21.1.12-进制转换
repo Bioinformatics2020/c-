@@ -3,7 +3,7 @@
 #include<string.h>
 #include<stdlib.h>
 
-//void two_to_twox(int num1[], int sz,int x)
+//void two_to_twox(int num1[], int sz,int x)//æœ€å¼€å§‹çš„
 //{
 //	int n;
 //	if (sz % x == 0)
@@ -43,7 +43,7 @@
 //	{
 //		a *= 2;
 //	}
-//	printf("%d½øÖÆÊıÎª£º",a);
+//	printf("%dè¿›åˆ¶æ•°ä¸ºï¼š",a);
 //	for (int i = 0; i < n; i++)
 //	{
 //		if (num2[i] >= 10)
@@ -54,7 +54,7 @@
 //	printf("\n");
 //}
 
-int division(int num3[], int sz, int y, int x)//´óÊı³ı·¨
+int division(int num3[], int sz, int y, int x)//å¤§æ•°é™¤æ³•
 {
 	int remainder = 0;
 	for (int i = 0; i < sz; i++)
@@ -90,7 +90,7 @@ void y_to_x(int num1[], int sz, int y,int x)
 		if (j == sz)
 			break;
 	}
-	printf("%d½øÖÆÎª£º", x);
+	printf("%dè¿›åˆ¶ä¸ºï¼š", x);
 	for (int i = n-1; i >=0; i--)
 	{
 		if (num2[i] >= 10)
@@ -103,22 +103,22 @@ void y_to_x(int num1[], int sz, int y,int x)
 
 int main()
 {
-	printf("ÇëÑ¡Ôñ½øÖÆ×ª»»¹¦ÄÜ:\n");
-	printf("´úºÅ ÊäÈë½øÖÆ \n");
-	printf("  1    2½øÖÆ  \n");
-	printf("  2    4½øÖÆ  \n");
-	printf("  3    8½øÖÆ  \n");
-	printf("  4   16½øÖÆ  \n");
-	printf("  5   32½øÖÆ  \n");
-	printf("  6   10½øÖÆ  \n");
-	printf("  7 ×Ô¶¨Òå×ª»»\n");
-	printf("ÇëÊäÈë´úºÅ£º");
+	printf("è¯·é€‰æ‹©è¿›åˆ¶è½¬æ¢åŠŸèƒ½:\n");
+	printf("ä»£å· è¾“å…¥è¿›åˆ¶ \n");
+	printf("  1    2è¿›åˆ¶  \n");
+	printf("  2    4è¿›åˆ¶  \n");
+	printf("  3    8è¿›åˆ¶  \n");
+	printf("  4   16è¿›åˆ¶  \n");
+	printf("  5   32è¿›åˆ¶  \n");
+	printf("  6   10è¿›åˆ¶  \n");
+	printf("  7 è‡ªå®šä¹‰è½¬æ¢\n");
+	printf("è¯·è¾“å…¥ä»£å·ï¼š");
 	int mode=1;
 back:
 	scanf("%d", &mode);
 	if (mode != 7)
 	{
-		printf("ÇëÊäÈëÏë×ª»»µÄÊı\n");
+		printf("è¯·è¾“å…¥æƒ³è½¬æ¢çš„æ•°\n");
 		char num[100] = { 0 };
 		scanf("%s", &num);
 		printf("\n");
@@ -171,17 +171,17 @@ back:
 			y_to_x(num1, sz, 32, 10);
 			break;
 		default:
-			printf("ÇëÖØĞÂÑ¡Ôñ´úºÅ:\n");
+			printf("è¯·é‡æ–°é€‰æ‹©ä»£å·:\n");
 			goto back;
 		}
 	}
 	else
 	{
-		printf("ÊäÈëµÄÊı½øÖÆÎª¼¸£¬Êä³öµÄÊı½øÖÆÎª¼¸£¿");
+		printf("è¾“å…¥çš„æ•°è¿›åˆ¶ä¸ºå‡ ï¼Œè¾“å‡ºçš„æ•°è¿›åˆ¶ä¸ºå‡ ï¼Ÿ");
 		int y, x;
 		scanf("%d%d", &y, &x);
 		printf("\n");
-		printf("ÇëÊäÈëÏë×ª»»µÄÊı£º");
+		printf("è¯·è¾“å…¥æƒ³è½¬æ¢çš„æ•°ï¼š");
 		scanf("%d");
 		char num[100] = { 0 };
 		scanf("%s", &num);
